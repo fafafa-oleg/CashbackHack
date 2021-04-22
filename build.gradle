@@ -5,7 +5,17 @@ plugins {
 group 'ru.netology'
 version '1.0-SNAPSHOT'
 
+sourceCompatibility = 11
+
 repositories {
     mavenCentral()
 }
 
+dependencies {
+    testImplementation 'org.testng:testng:7.3.0'
+
+}
+
+test {
+    useTestNG()
+}
